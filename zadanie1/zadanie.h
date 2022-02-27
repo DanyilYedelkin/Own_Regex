@@ -10,9 +10,9 @@
 
 int isAccepted(char* in_str);
 void start(char c);
-void end(char c);
-void first_group(char first_c, char second_c);
-void second_group(char c);
+void q1(char c);
+void q2(char c);
+void q3(char c);
 
 
 #endif /*ZADANIE_H*/
