@@ -50,7 +50,6 @@ void q3(char c) {
 int isAccepted(char *in_str) {
     int i;
     int len = strlen(in_str);
-    if ((len == 1) || (len == 2 && in_str[0] == 'a')) return NON_ACCEPT;
     state = 0;
 
     
@@ -66,7 +65,7 @@ int isAccepted(char *in_str) {
         }
     }
     
-    if (state > 0) {
+    if (state == 3) {
         return ACCEPT;
     } else {
         return NON_ACCEPT;
